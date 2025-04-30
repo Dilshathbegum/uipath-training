@@ -1,1 +1,1 @@
-# uipath-training
+# uipathtraining
