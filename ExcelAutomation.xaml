@@ -37,6 +37,13 @@
       <x:String>System.Numerics</x:String>
       <x:String>System.Globalization</x:String>
       <x:String>UiPath.Activities.System.Date</x:String>
+      <x:String>UiPath.UIAutomationNext.Enums</x:String>
+      <x:String>UiPath.UIAutomationCore.Contracts</x:String>
+      <x:String>UiPath.UIAutomationNext.Activities</x:String>
+      <x:String>UiPath.Shared.Activities</x:String>
+      <x:String>UiPath.Platform.ObjectLibrary</x:String>
+      <x:String>UiPath.Platform.SyncObjects</x:String>
+      <x:String>UiPath.UIAutomationNext.Models</x:String>
     </sco:Collection>
   </TextExpression.NamespacesForImplementation>
   <TextExpression.ReferencesForImplementation>
@@ -91,9 +98,17 @@
       <AssemblyReference>System.Collections.NonGeneric</AssemblyReference>
       <AssemblyReference>System.Linq.Async</AssemblyReference>
       <AssemblyReference>System.Runtime.Numerics</AssemblyReference>
+      <AssemblyReference>System.Memory.Data</AssemblyReference>
+      <AssemblyReference>UiPath.UIAutomationNext</AssemblyReference>
+      <AssemblyReference>UiPath.UIAutomationCore</AssemblyReference>
+      <AssemblyReference>UiPath.UIAutomationNext.Activities</AssemblyReference>
+      <AssemblyReference>UiPath.Mail.Activities</AssemblyReference>
+      <AssemblyReference>UiPath.GSuite.Activities</AssemblyReference>
+      <AssemblyReference>UiPath.MicrosoftOffice365.Activities</AssemblyReference>
+      <AssemblyReference>UiPath.OCR.Activities</AssemblyReference>
     </sco:Collection>
   </TextExpression.ReferencesForImplementation>
-  <Sequence DisplayName="EXCEL_AUTOMATION" sap:VirtualizedContainerService.HintSize="902,2434" sap2010:WorkflowViewState.IdRef="Sequence_1">
+  <Sequence DisplayName="EXCEL_AUTOMATION" sap:VirtualizedContainerService.HintSize="569.3333333333333,2818" sap2010:WorkflowViewState.IdRef="Sequence_1">
     <Sequence.Variables>
       <Variable x:TypeArguments="sd:DataTable" Name="datatable">
         <sap:WorkflowViewStateService.ViewState>
@@ -109,12 +124,14 @@
         <x:Boolean x:Key="IsExpanded">True</x:Boolean>
       </scg:Dictionary>
     </sap:WorkflowViewStateService.ViewState>
-    <Sequence DisplayName="ExcelAutomation" sap:VirtualizedContainerService.HintSize="540,2411.3333333333335" sap2010:WorkflowViewState.IdRef="Sequence_10">
+    <Sequence sap2010:Annotation.AnnotationText="Reading ExcelAutomation" DisplayName="ExcelAutomation" sap:VirtualizedContainerService.HintSize="540,2795.3333333333335" sap2010:WorkflowViewState.IdRef="Sequence_10">
       <sap:WorkflowViewStateService.ViewState>
         <scg:Dictionary x:TypeArguments="x:String, x:Object">
           <x:Boolean x:Key="IsExpanded">True</x:Boolean>
+          <x:Boolean x:Key="IsAnnotationDocked">True</x:Boolean>
         </scg:Dictionary>
       </sap:WorkflowViewStateService.ViewState>
+      <ui:LogMessage DisplayName="Log Message" sap:VirtualizedContainerService.HintSize="506,176.66666666666666" sap2010:WorkflowViewState.IdRef="LogMessage_2" Level="Info" Message="[&quot;Launching Excel Automation process&quot;]" />
       <ui:ReadRange WorkbookPathResource="{x:Null}" AddHeaders="True" DataTable="[datatable]" DisplayName="Read Range Workbook" sap:VirtualizedContainerService.HintSize="506,120" sap2010:WorkflowViewState.IdRef="ReadRange_2" SheetName="sheet1" WorkbookPath="C:\Users\ADMIN\Downloads\Excel task.xlsx">
         <ui:ReadRange.Range>
           <InArgument x:TypeArguments="x:String">
@@ -227,13 +244,14 @@
           </ActivityAction>
         </ui:ForEachRow.Body>
       </ui:ForEachRow>
-      <ui:WriteRange WorkbookPathResource="{x:Null}" AddHeaders="True" DataTable="[datatable]" DisplayName="Write Range Workbook" sap:VirtualizedContainerService.HintSize="506,138.66666666666666" sap2010:WorkflowViewState.IdRef="WriteRange_4" SheetName="sheet2" WorkbookPath="C:\Users\ADMIN\Downloads\Excel task.xlsx">
+      <ui:WriteRange WorkbookPathResource="{x:Null}" AddHeaders="True" DataTable="[datatable]" DisplayName="Write Range Workbook" sap:VirtualizedContainerService.HintSize="506,148" sap2010:WorkflowViewState.IdRef="WriteRange_4" SheetName="sheet2" WorkbookPath="C:\Users\ADMIN\Downloads\Excel task.xlsx">
         <ui:WriteRange.StartingCell>
           <InArgument x:TypeArguments="x:String">
             <Literal x:TypeArguments="x:String" Value="" />
           </InArgument>
         </ui:WriteRange.StartingCell>
       </ui:WriteRange>
+      <ui:LogMessage DisplayName="Log Message" sap:VirtualizedContainerService.HintSize="506,167.33333333333334" sap2010:WorkflowViewState.IdRef="LogMessage_1" Level="Info" Message="[&quot;Excel Automation completed successfully&quot;]" />
     </Sequence>
   </Sequence>
 </Activity>
