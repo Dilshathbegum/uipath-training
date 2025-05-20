@@ -1,0 +1,13 @@
+﻿{
+  "Name": "Instructions1. The goal…",
+  "Type": "Element",
+  "Id": "SbpIjT_sT0SYQ0Py7Z-YMQ",
+  "Reference": "FKN7ci7VEUurLgMGckbnAA/SbpIjT_sT0SYQ0Py7Z-YMQ",
+  "ParentRef": "FKN7ci7VEUurLgMGckbnAA/MK-dinFWI0ODmv_O23Yz_w",
+  "Created": "2025-05-19T12:48:55.9170681Z",
+  "Updated": "2025-05-19T12:48:55.9170681Z",
+  "CreatedBy": [
+    "UiPath.UIAutomationCore, Version=25.10.2.0, Culture=neutral, PublicKeyToken=null",
+    "UiPath.Platform, Version=25.4.0.0, Culture=neutral, PublicKeyToken=null"
+  ]
+}

@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="utf-16"?>
+<ObjectRepositoryTargetData ContentHash="6WQ-M28DzkmuctkytOJ-jg" xmlns="http://schemas.uipath.com/workflow/activities/uix" xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml">
+  <ObjectRepositoryTargetData.Data>
+    <TargetAnchorable x:Key="TargetAnchorable" BrowserURL="rpachallenge.com/movieSearch" DesignTimeRectangle="523, 182, 291, 796" FuzzySelectorArgument="&lt;webctrl type='' class='card col s12' tag='DIV' aaname='' matching:class='fuzzy' fuzzylevel:class='0.0' matching:aaname='fuzzy' fuzzylevel:aaname='0.0' check:innerText='A Working Man&amp;#xA;more_vert&amp;#xA;&amp;#xA;Levon Cade left behind a decorated military career in the black ops to...' /&gt;" Guid="c444c8ff-672d-42c9-a190-48203a8c07b2" ScopeSelectorArgument="&lt;html app='chrome.exe' title='Rpa Challenge' /&gt;" SearchSteps="FuzzySelector" Version="V6" Visibility="Interactive" WaitForReadyArgument="None">
+      <imageRef attrName="InformativeScreenshot" originalValue="231f77297b94c7f3ea96c3ac84e9f216.png" xmlns="">0EFETYrIEk0iFEGNPqlhE9A</imageRef>
+    </TargetAnchorable>
+    <x:String x:Key="ActivityType">Click</x:String>
+  </ObjectRepositoryTargetData.Data>
+</ObjectRepositoryTargetData>
