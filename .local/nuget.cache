@@ -1,6 +1,6 @@
 {
   "version": 2,
-  "dgSpecHash": "/Kbb1f/HxBI=",
+  "dgSpecHash": "gJmCLMq7Gvo=",
   "success": true,
   "projectFilePath": "C:\\Users\\ADMIN\\Documents\\uipath-training\\.local\\",
   "expectedPackageFiles": [
@@ -287,9 +287,9 @@
     "C:\\Users\\ADMIN\\.nuget\\packages\\uipath.officelibs\\1.0.0\\uipath.officelibs.1.0.0.nupkg.sha512",
     "C:\\Users\\ADMIN\\.nuget\\packages\\uipath.opentelemetry.contracts\\2.5.17\\uipath.opentelemetry.contracts.2.5.17.nupkg.sha512",
     "C:\\Users\\ADMIN\\.nuget\\packages\\uipath.platform\\25.4.0\\uipath.platform.25.4.0.nupkg.sha512",
-    "C:\\Users\\ADMIN\\.nuget\\packages\\uipath.system.activities\\24.10.7\\uipath.system.activities.24.10.7.nupkg.sha512",
-    "C:\\Users\\ADMIN\\.nuget\\packages\\uipath.system.activities.runtime\\24.10.7\\uipath.system.activities.runtime.24.10.7.nupkg.sha512",
-    "C:\\Users\\ADMIN\\.nuget\\packages\\uipath.system.activities.runtime.windows\\24.10.7\\uipath.system.activities.runtime.windows.24.10.7.nupkg.sha512",
+    "C:\\Users\\ADMIN\\.nuget\\packages\\uipath.system.activities\\25.4.2\\uipath.system.activities.25.4.2.nupkg.sha512",
+    "C:\\Users\\ADMIN\\.nuget\\packages\\uipath.system.activities.runtime\\25.4.2\\uipath.system.activities.runtime.25.4.2.nupkg.sha512",
+    "C:\\Users\\ADMIN\\.nuget\\packages\\uipath.system.activities.runtime.windows\\25.4.2\\uipath.system.activities.runtime.windows.25.4.2.nupkg.sha512",
     "C:\\Users\\ADMIN\\.nuget\\packages\\uipath.telemetry.client\\2.5.17\\uipath.telemetry.client.2.5.17.nupkg.sha512",
     "C:\\Users\\ADMIN\\.nuget\\packages\\uipath.uiautomation.activities\\25.10.2\\uipath.uiautomation.activities.25.10.2.nupkg.sha512",
     "C:\\Users\\ADMIN\\.nuget\\packages\\uipath.uiautomation.activities.runtime\\25.10.2\\uipath.uiautomation.activities.runtime.25.10.2.nupkg.sha512",

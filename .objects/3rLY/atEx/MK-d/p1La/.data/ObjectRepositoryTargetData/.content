@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="utf-16"?>
+<ObjectRepositoryTargetData ContentHash="aoLflkRAmU-mY6DVvSXS_w" xmlns="http://schemas.uipath.com/workflow/activities/uix" xmlns:scg="clr-namespace:System.Collections.Generic;assembly=System.Private.CoreLib" xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml">
+  <ObjectRepositoryTargetData.Data>
+    <TargetAnchorable x:Key="TargetAnchorable" BrowserURL="rpachallenge.com/movieSearch" CVScreenId="d70a8196-ceaf-4d1a-bff7-91d5a94be311" DesignTimeRectangle="11, 219, 0, 0" ElementType="Text" FullSelectorArgument="&lt;webctrl aaname='*' innertext='*' visibleinnertext='*' /&gt;&lt;webctrl aaname='*' innertext='*' visibleinnertext='*' /&gt;" Guid="46006cfa-693f-43e6-ae5b-292cf8d4eb9c" ScopeSelectorArgument="&lt;html app='chrome.exe' title='Rpa Challenge' /&gt;" SearchSteps="Selector" Version="V6" Visibility="Interactive" WaitForReadyArgument="None">
+      <TargetAnchorable.Anchors>
+        <scg:List x:TypeArguments="ITarget" Capacity="4">
+          <Target CVScreenId="d70a8196-ceaf-4d1a-bff7-91d5a94be311" CvTextArea="1004, 830, 223, 22" CvTextArgument="From the Shadows" CvType="Text" DesignTimeRectangle="1005, 826, 299, 32" ElementType="Text" FuzzySelectorArgument="&lt;webctrl aaname='From the Shadows ' tag='SPAN' type='' class='card-title activator' matching:aaname='fuzzy' fuzzylevel:aaname='0.0' matching:class='fuzzy' fuzzylevel:class='0.0' check:innerText='From the Shadows' /&gt;" Guid="3e2664b8-cec2-421e-a9f4-03f0b7c68c19" SearchSteps="FuzzySelector, CV" />
+        </scg:List>
+      </TargetAnchorable.Anchors>
+      <imageRef attrName="InformativeScreenshot" originalValue="ceddb0a4c222aee9322f632d7c117b9c.png" xmlns="">0f_kPJ8fLaE-p_CqZPCXH5g</imageRef>
+    </TargetAnchorable>
+    <x:String x:Key="ActivityType">Click</x:String>
+  </ObjectRepositoryTargetData.Data>
+</ObjectRepositoryTargetData>

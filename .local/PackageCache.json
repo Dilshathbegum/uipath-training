@@ -46,6 +46,51 @@
     },
     {
       "Package": {
+        "Id": "UiPath.GSuite.Activities",
+        "Version": "3.1.10-preview"
+      },
+      "Assemblies": [
+        "C:\\Users\\ADMIN\\.nuget\\packages\\bouncycastle.cryptography\\2.4.0\\lib/net6.0/BouncyCastle.Cryptography.dll",
+        "C:\\Users\\ADMIN\\.nuget\\packages\\google.apis\\1.61.0\\lib/netstandard2.0/Google.Apis.dll",
+        "C:\\Users\\ADMIN\\.nuget\\packages\\google.apis.auth\\1.61.0\\lib/netstandard2.0/Google.Apis.Auth.PlatformServices.dll",
+        "C:\\Users\\ADMIN\\.nuget\\packages\\google.apis.auth\\1.61.0\\lib/netstandard2.0/Google.Apis.Auth.dll",
+        "C:\\Users\\ADMIN\\.nuget\\packages\\google.apis.calendar.v3\\1.55.0.2554\\lib/netstandard2.0/Google.Apis.Calendar.v3.dll",
+        "C:\\Users\\ADMIN\\.nuget\\packages\\google.apis.core\\1.61.0\\lib/netstandard2.0/Google.Apis.Core.dll",
+        "C:\\Users\\ADMIN\\.nuget\\packages\\google.apis.docs.v1\\1.55.0.2379\\lib/netstandard2.0/Google.Apis.Docs.v1.dll",
+        "C:\\Users\\ADMIN\\.nuget\\packages\\google.apis.drive.v3\\1.61.0.3082\\lib/netstandard2.0/Google.Apis.Drive.v3.dll",
+        "C:\\Users\\ADMIN\\.nuget\\packages\\google.apis.drivelabels.v2\\1.61.0.3079\\lib/netstandard2.0/Google.Apis.DriveLabels.v2.dll",
+        "C:\\Users\\ADMIN\\.nuget\\packages\\google.apis.forms.v1\\1.56.0.2623\\lib/netstandard2.0/Google.Apis.Forms.v1.dll",
+        "C:\\Users\\ADMIN\\.nuget\\packages\\google.apis.gmail.v1\\1.55.0.2510\\lib/netstandard2.0/Google.Apis.Gmail.v1.dll",
+        "C:\\Users\\ADMIN\\.nuget\\packages\\google.apis.peopleservice.v1\\1.55.0.2567\\lib/netstandard2.0/Google.Apis.PeopleService.v1.dll",
+        "C:\\Users\\ADMIN\\.nuget\\packages\\google.apis.script.v1\\1.55.0.2555\\lib/netstandard2.0/Google.Apis.Script.v1.dll",
+        "C:\\Users\\ADMIN\\.nuget\\packages\\google.apis.sheets.v4\\1.55.0.2371\\lib/netstandard2.0/Google.Apis.Sheets.v4.dll",
+        "C:\\Users\\ADMIN\\.nuget\\packages\\google.apis.tasks.v1\\1.61.0.3015\\lib/netstandard2.0/Google.Apis.Tasks.v1.dll",
+        "C:\\Users\\ADMIN\\.nuget\\packages\\microsoft.bcl.asyncinterfaces\\6.0.0\\lib/netstandard2.1/Microsoft.Bcl.AsyncInterfaces.dll",
+        "C:\\Users\\ADMIN\\.nuget\\packages\\microsoft.extensions.dependencyinjection\\6.0.2\\lib/net6.0/Microsoft.Extensions.DependencyInjection.dll",
+        "C:\\Users\\ADMIN\\.nuget\\packages\\microsoft.extensions.dependencyinjection.abstractions\\6.0.0\\lib/net6.0/Microsoft.Extensions.DependencyInjection.Abstractions.dll",
+        "C:\\Users\\ADMIN\\.nuget\\packages\\mimekit\\4.7.1\\lib/net8.0/MimeKit.dll",
+        "C:\\Users\\ADMIN\\.nuget\\packages\\newtonsoft.json\\13.0.3\\lib/net6.0/Newtonsoft.Json.dll",
+        "C:\\Users\\ADMIN\\.nuget\\packages\\nodatime\\2.4.7\\lib/netstandard2.0/NodaTime.dll",
+        "C:\\Users\\ADMIN\\.nuget\\packages\\system.activities.viewmodels\\1.0.0-20250401.2\\lib/net6.0-windows7.0/System.Activities.ViewModels.dll",
+        "C:\\Users\\ADMIN\\.nuget\\packages\\system.io.abstractions\\3.0.10\\lib/netstandard2.0/System.IO.Abstractions.dll",
+        "C:\\Users\\ADMIN\\.nuget\\packages\\system.linq.async\\6.0.1\\lib/net6.0/System.Linq.Async.dll",
+        "C:\\Users\\ADMIN\\.nuget\\packages\\system.linq.async.queryable\\6.0.1\\lib/net6.0/System.Linq.Async.Queryable.dll",
+        "C:\\Users\\ADMIN\\.nuget\\packages\\system.runtime.caching\\6.0.0\\runtimes/win/lib/net6.0/System.Runtime.Caching.dll",
+        "C:\\Users\\ADMIN\\.nuget\\packages\\uipath.activities.runtimegovernance\\1.1.7\\lib/net6.0-windows7.0/UiPath.Activities.RuntimeGovernance.dll",
+        "C:\\Users\\ADMIN\\.nuget\\packages\\uipath.codedworkflows\\24.10.1\\lib/net6.0-windows7.0/UiPath.CodedWorkflows.dll",
+        "C:\\Users\\ADMIN\\.nuget\\packages\\uipath.connectionclient\\2.0.9\\lib/net6.0/ConnectionClient.dll",
+        "C:\\Users\\ADMIN\\.nuget\\packages\\uipath.gsuite.activities\\3.1.10-preview\\lib/net6.0-windows7.0/UiPath.GSuite.Activities.Api.dll",
+        "C:\\Users\\ADMIN\\.nuget\\packages\\uipath.gsuite.activities\\3.1.10-preview\\lib/net6.0-windows7.0/UiPath.GSuite.Activities.Design.dll",
+        "C:\\Users\\ADMIN\\.nuget\\packages\\uipath.gsuite.activities\\3.1.10-preview\\lib/net6.0-windows7.0/UiPath.GSuite.Activities.dll",
+        "C:\\Users\\ADMIN\\.nuget\\packages\\uipath.gsuite.activities\\3.1.10-preview\\lib/net6.0-windows7.0/UiPath.GSuite.dll",
+        "C:\\Users\\ADMIN\\.nuget\\packages\\uipath.opentelemetry.contracts\\2.5.17\\lib/netstandard2.0/UiPath.OpenTelemetry.Contracts.dll",
+        "C:\\Users\\ADMIN\\.nuget\\packages\\uipath.platform\\25.4.0\\lib/net6.0-windows7.0/UiPath.Platform.dll",
+        "C:\\Users\\ADMIN\\.nuget\\packages\\uipath.telemetry.client\\2.5.17\\lib/netstandard2.0/TelemetryClient.dll"
+      ],
+      "Path": "C:\\Users\\ADMIN\\.nuget\\packages\\uipath.gsuite.activities\\3.1.10-preview"
+    },
+    {
+      "Package": {
         "Id": "UiPath.Mail.Activities",
         "Version": "2.1.10-preview"
       },
@@ -53,8 +98,8 @@
         "C:\\Users\\ADMIN\\.nuget\\packages\\azure.core\\1.18.0\\lib/net5.0/Azure.Core.dll",
         "C:\\Users\\ADMIN\\.nuget\\packages\\bouncycastle.cryptography\\2.4.0\\lib/net6.0/BouncyCastle.Cryptography.dll",
         "C:\\Users\\ADMIN\\.nuget\\packages\\google.apis\\1.61.0\\lib/netstandard2.0/Google.Apis.dll",
-        "C:\\Users\\ADMIN\\.nuget\\packages\\google.apis.auth\\1.61.0\\lib/netstandard2.0/Google.Apis.Auth.dll",
         "C:\\Users\\ADMIN\\.nuget\\packages\\google.apis.auth\\1.61.0\\lib/netstandard2.0/Google.Apis.Auth.PlatformServices.dll",
+        "C:\\Users\\ADMIN\\.nuget\\packages\\google.apis.auth\\1.61.0\\lib/netstandard2.0/Google.Apis.Auth.dll",
         "C:\\Users\\ADMIN\\.nuget\\packages\\google.apis.calendar.v3\\1.55.0.2554\\lib/netstandard2.0/Google.Apis.Calendar.v3.dll",
         "C:\\Users\\ADMIN\\.nuget\\packages\\google.apis.core\\1.61.0\\lib/netstandard2.0/Google.Apis.Core.dll",
         "C:\\Users\\ADMIN\\.nuget\\packages\\google.apis.gmail.v1\\1.55.0.2510\\lib/netstandard2.0/Google.Apis.Gmail.v1.dll",
@@ -155,7 +200,7 @@
     {
       "Package": {
         "Id": "UiPath.System.Activities",
-        "Version": "24.10.7"
+        "Version": "25.4.2"
       },
       "Assemblies": [
         "C:\\Users\\ADMIN\\.nuget\\packages\\csvhelper\\16.0.0\\lib/netstandard2.1/CsvHelper.dll",
@@ -233,15 +278,15 @@
         "C:\\Users\\ADMIN\\.nuget\\packages\\uipath.codedworkflows\\24.10.1\\lib/net6.0-windows7.0/UiPath.CodedWorkflows.dll",
         "C:\\Users\\ADMIN\\.nuget\\packages\\uipath.opentelemetry.contracts\\2.5.17\\lib/netstandard2.0/UiPath.OpenTelemetry.Contracts.dll",
         "C:\\Users\\ADMIN\\.nuget\\packages\\uipath.platform\\25.4.0\\lib/net6.0-windows7.0/UiPath.Platform.dll",
-        "C:\\Users\\ADMIN\\.nuget\\packages\\uipath.system.activities\\24.10.7\\lib/net6.0-windows7.0/UiPath.System.Activities.Design.dll",
-        "C:\\Users\\ADMIN\\.nuget\\packages\\uipath.system.activities\\24.10.7\\lib/net6.0-windows7.0/UiPath.System.Activities.ViewModels.dll",
-        "C:\\Users\\ADMIN\\.nuget\\packages\\uipath.system.activities.runtime\\24.10.7\\lib/net6.0-windows7.0/UiPath.System.Activities.Package.Runtime.dll",
-        "C:\\Users\\ADMIN\\.nuget\\packages\\uipath.system.activities.runtime.windows\\24.10.7\\lib/net6.0-windows7.0/UiPath.OrchestratorClient.dll",
-        "C:\\Users\\ADMIN\\.nuget\\packages\\uipath.system.activities.runtime.windows\\24.10.7\\lib/net6.0-windows7.0/UiPath.System.Activities.Api.dll",
-        "C:\\Users\\ADMIN\\.nuget\\packages\\uipath.system.activities.runtime.windows\\24.10.7\\lib/net6.0-windows7.0/UiPath.System.Activities.dll",
+        "C:\\Users\\ADMIN\\.nuget\\packages\\uipath.system.activities\\25.4.2\\lib/net6.0-windows7.0/UiPath.System.Activities.Design.dll",
+        "C:\\Users\\ADMIN\\.nuget\\packages\\uipath.system.activities\\25.4.2\\lib/net6.0-windows7.0/UiPath.System.Activities.ViewModels.dll",
+        "C:\\Users\\ADMIN\\.nuget\\packages\\uipath.system.activities.runtime\\25.4.2\\lib/net6.0-windows7.0/UiPath.System.Activities.Package.Runtime.dll",
+        "C:\\Users\\ADMIN\\.nuget\\packages\\uipath.system.activities.runtime.windows\\25.4.2\\lib/net6.0-windows7.0/UiPath.OrchestratorClient.dll",
+        "C:\\Users\\ADMIN\\.nuget\\packages\\uipath.system.activities.runtime.windows\\25.4.2\\lib/net6.0-windows7.0/UiPath.System.Activities.Api.dll",
+        "C:\\Users\\ADMIN\\.nuget\\packages\\uipath.system.activities.runtime.windows\\25.4.2\\lib/net6.0-windows7.0/UiPath.System.Activities.dll",
         "C:\\Users\\ADMIN\\.nuget\\packages\\uipath.telemetry.client\\2.5.17\\lib/netstandard2.0/TelemetryClient.dll"
       ],
-      "Path": "C:\\Users\\ADMIN\\.nuget\\packages\\uipath.system.activities\\24.10.7"
+      "Path": "C:\\Users\\ADMIN\\.nuget\\packages\\uipath.system.activities\\25.4.2"
     },
     {
       "Package": {
@@ -307,51 +352,6 @@
         "C:\\Users\\ADMIN\\.nuget\\packages\\uipath.vision\\3.15.0\\lib/net6.0-windows7.0/UiPath.Vision.dll"
       ],
       "Path": "C:\\Users\\ADMIN\\.nuget\\packages\\uipath.uiautomation.activities\\25.10.2"
-    },
-    {
-      "Package": {
-        "Id": "UiPath.GSuite.Activities",
-        "Version": "3.1.10-preview"
-      },
-      "Assemblies": [
-        "C:\\Users\\ADMIN\\.nuget\\packages\\bouncycastle.cryptography\\2.4.0\\lib/net6.0/BouncyCastle.Cryptography.dll",
-        "C:\\Users\\ADMIN\\.nuget\\packages\\google.apis\\1.61.0\\lib/netstandard2.0/Google.Apis.dll",
-        "C:\\Users\\ADMIN\\.nuget\\packages\\google.apis.auth\\1.61.0\\lib/netstandard2.0/Google.Apis.Auth.dll",
-        "C:\\Users\\ADMIN\\.nuget\\packages\\google.apis.auth\\1.61.0\\lib/netstandard2.0/Google.Apis.Auth.PlatformServices.dll",
-        "C:\\Users\\ADMIN\\.nuget\\packages\\google.apis.calendar.v3\\1.55.0.2554\\lib/netstandard2.0/Google.Apis.Calendar.v3.dll",
-        "C:\\Users\\ADMIN\\.nuget\\packages\\google.apis.core\\1.61.0\\lib/netstandard2.0/Google.Apis.Core.dll",
-        "C:\\Users\\ADMIN\\.nuget\\packages\\google.apis.docs.v1\\1.55.0.2379\\lib/netstandard2.0/Google.Apis.Docs.v1.dll",
-        "C:\\Users\\ADMIN\\.nuget\\packages\\google.apis.drive.v3\\1.61.0.3082\\lib/netstandard2.0/Google.Apis.Drive.v3.dll",
-        "C:\\Users\\ADMIN\\.nuget\\packages\\google.apis.drivelabels.v2\\1.61.0.3079\\lib/netstandard2.0/Google.Apis.DriveLabels.v2.dll",
-        "C:\\Users\\ADMIN\\.nuget\\packages\\google.apis.forms.v1\\1.56.0.2623\\lib/netstandard2.0/Google.Apis.Forms.v1.dll",
-        "C:\\Users\\ADMIN\\.nuget\\packages\\google.apis.gmail.v1\\1.55.0.2510\\lib/netstandard2.0/Google.Apis.Gmail.v1.dll",
-        "C:\\Users\\ADMIN\\.nuget\\packages\\google.apis.peopleservice.v1\\1.55.0.2567\\lib/netstandard2.0/Google.Apis.PeopleService.v1.dll",
-        "C:\\Users\\ADMIN\\.nuget\\packages\\google.apis.script.v1\\1.55.0.2555\\lib/netstandard2.0/Google.Apis.Script.v1.dll",
-        "C:\\Users\\ADMIN\\.nuget\\packages\\google.apis.sheets.v4\\1.55.0.2371\\lib/netstandard2.0/Google.Apis.Sheets.v4.dll",
-        "C:\\Users\\ADMIN\\.nuget\\packages\\google.apis.tasks.v1\\1.61.0.3015\\lib/netstandard2.0/Google.Apis.Tasks.v1.dll",
-        "C:\\Users\\ADMIN\\.nuget\\packages\\microsoft.bcl.asyncinterfaces\\6.0.0\\lib/netstandard2.1/Microsoft.Bcl.AsyncInterfaces.dll",
-        "C:\\Users\\ADMIN\\.nuget\\packages\\microsoft.extensions.dependencyinjection\\6.0.2\\lib/net6.0/Microsoft.Extensions.DependencyInjection.dll",
-        "C:\\Users\\ADMIN\\.nuget\\packages\\microsoft.extensions.dependencyinjection.abstractions\\6.0.0\\lib/net6.0/Microsoft.Extensions.DependencyInjection.Abstractions.dll",
-        "C:\\Users\\ADMIN\\.nuget\\packages\\mimekit\\4.7.1\\lib/net8.0/MimeKit.dll",
-        "C:\\Users\\ADMIN\\.nuget\\packages\\newtonsoft.json\\13.0.3\\lib/net6.0/Newtonsoft.Json.dll",
-        "C:\\Users\\ADMIN\\.nuget\\packages\\nodatime\\2.4.7\\lib/netstandard2.0/NodaTime.dll",
-        "C:\\Users\\ADMIN\\.nuget\\packages\\system.activities.viewmodels\\1.0.0-20250401.2\\lib/net6.0-windows7.0/System.Activities.ViewModels.dll",
-        "C:\\Users\\ADMIN\\.nuget\\packages\\system.io.abstractions\\3.0.10\\lib/netstandard2.0/System.IO.Abstractions.dll",
-        "C:\\Users\\ADMIN\\.nuget\\packages\\system.linq.async\\6.0.1\\lib/net6.0/System.Linq.Async.dll",
-        "C:\\Users\\ADMIN\\.nuget\\packages\\system.linq.async.queryable\\6.0.1\\lib/net6.0/System.Linq.Async.Queryable.dll",
-        "C:\\Users\\ADMIN\\.nuget\\packages\\system.runtime.caching\\6.0.0\\runtimes/win/lib/net6.0/System.Runtime.Caching.dll",
-        "C:\\Users\\ADMIN\\.nuget\\packages\\uipath.activities.runtimegovernance\\1.1.7\\lib/net6.0-windows7.0/UiPath.Activities.RuntimeGovernance.dll",
-        "C:\\Users\\ADMIN\\.nuget\\packages\\uipath.codedworkflows\\24.10.1\\lib/net6.0-windows7.0/UiPath.CodedWorkflows.dll",
-        "C:\\Users\\ADMIN\\.nuget\\packages\\uipath.connectionclient\\2.0.9\\lib/net6.0/ConnectionClient.dll",
-        "C:\\Users\\ADMIN\\.nuget\\packages\\uipath.gsuite.activities\\3.1.10-preview\\lib/net6.0-windows7.0/UiPath.GSuite.Activities.Api.dll",
-        "C:\\Users\\ADMIN\\.nuget\\packages\\uipath.gsuite.activities\\3.1.10-preview\\lib/net6.0-windows7.0/UiPath.GSuite.Activities.Design.dll",
-        "C:\\Users\\ADMIN\\.nuget\\packages\\uipath.gsuite.activities\\3.1.10-preview\\lib/net6.0-windows7.0/UiPath.GSuite.Activities.dll",
-        "C:\\Users\\ADMIN\\.nuget\\packages\\uipath.gsuite.activities\\3.1.10-preview\\lib/net6.0-windows7.0/UiPath.GSuite.dll",
-        "C:\\Users\\ADMIN\\.nuget\\packages\\uipath.opentelemetry.contracts\\2.5.17\\lib/netstandard2.0/UiPath.OpenTelemetry.Contracts.dll",
-        "C:\\Users\\ADMIN\\.nuget\\packages\\uipath.platform\\25.4.0\\lib/net6.0-windows7.0/UiPath.Platform.dll",
-        "C:\\Users\\ADMIN\\.nuget\\packages\\uipath.telemetry.client\\2.5.17\\lib/netstandard2.0/TelemetryClient.dll"
-      ],
-      "Path": "C:\\Users\\ADMIN\\.nuget\\packages\\uipath.gsuite.activities\\3.1.10-preview"
     }
   ],
   "Conflicts": [],
@@ -5023,11 +5023,11 @@
     },
     "UiPath.System.Activities": {
       "Id": "UiPath.System.Activities",
-      "Version": "24.10.7",
+      "Version": "25.4.2",
       "Dependencies": [
         {
           "Item1": "UiPath.System.Activities.Runtime",
-          "Item2": "[24.10.7, )"
+          "Item2": "[25.4.2, )"
         },
         {
           "Item1": "CsvHelper",
@@ -5075,7 +5075,7 @@
         },
         {
           "Item1": "System.Activities.ViewModels",
-          "Item2": "[1.0.0-20240905.3, )"
+          "Item2": "[1.0.0-20250401.2, )"
         },
         {
           "Item1": "System.Management.Automation",
@@ -5083,11 +5083,11 @@
         },
         {
           "Item1": "UiPath.CodedWorkflows",
-          "Item2": "[24.10.0, )"
+          "Item2": "[24.10.1, )"
         },
         {
           "Item1": "UiPath.Platform",
-          "Item2": "[24.11.1, )"
+          "Item2": "[25.4.0, )"
         },
         {
           "Item1": "UiPath.Telemetry.Client",
@@ -5101,17 +5101,17 @@
     },
     "UiPath.System.Activities.Runtime": {
       "Id": "UiPath.System.Activities.Runtime",
-      "Version": "24.10.7",
+      "Version": "25.4.2",
       "Dependencies": [
         {
           "Item1": "UiPath.System.Activities.Runtime.Windows",
-          "Item2": "[24.10.7, )"
+          "Item2": "[25.4.2, )"
         }
       ]
     },
     "UiPath.System.Activities.Runtime.Windows": {
       "Id": "UiPath.System.Activities.Runtime.Windows",
-      "Version": "24.10.7",
+      "Version": "25.4.2",
       "Dependencies": [
         {
           "Item1": "CsvHelper",
@@ -5167,11 +5167,11 @@
         },
         {
           "Item1": "UiPath.CodedWorkflows",
-          "Item2": "[24.10.0, )"
+          "Item2": "[24.10.1, )"
         },
         {
           "Item1": "UiPath.Platform",
-          "Item2": "[24.11.1, )"
+          "Item2": "[25.4.0, )"
         },
         {
           "Item1": "UiPath.Telemetry.Client",
@@ -5403,8 +5403,8 @@
         "Version": "1.61.0"
       },
       "Assemblies": [
-        "C:\\Users\\ADMIN\\.nuget\\packages\\google.apis.auth\\1.61.0\\lib\\netstandard2.0\\Google.Apis.Auth.dll",
-        "C:\\Users\\ADMIN\\.nuget\\packages\\google.apis.auth\\1.61.0\\lib\\netstandard2.0\\Google.Apis.Auth.PlatformServices.dll"
+        "C:\\Users\\ADMIN\\.nuget\\packages\\google.apis.auth\\1.61.0\\lib\\netstandard2.0\\Google.Apis.Auth.PlatformServices.dll",
+        "C:\\Users\\ADMIN\\.nuget\\packages\\google.apis.auth\\1.61.0\\lib\\netstandard2.0\\Google.Apis.Auth.dll"
       ],
       "Path": "C:\\Users\\ADMIN\\.nuget\\packages\\google.apis.auth\\1.61.0"
     },
@@ -8089,35 +8089,35 @@
     {
       "Package": {
         "Id": "UiPath.System.Activities",
-        "Version": "24.10.7"
+        "Version": "25.4.2"
       },
       "Assemblies": [
-        "C:\\Users\\ADMIN\\.nuget\\packages\\uipath.system.activities\\24.10.7\\lib\\net6.0-windows7.0\\UiPath.System.Activities.Design.dll",
-        "C:\\Users\\ADMIN\\.nuget\\packages\\uipath.system.activities\\24.10.7\\lib\\net6.0-windows7.0\\UiPath.System.Activities.ViewModels.dll"
+        "C:\\Users\\ADMIN\\.nuget\\packages\\uipath.system.activities\\25.4.2\\lib\\net6.0-windows7.0\\UiPath.System.Activities.Design.dll",
+        "C:\\Users\\ADMIN\\.nuget\\packages\\uipath.system.activities\\25.4.2\\lib\\net6.0-windows7.0\\UiPath.System.Activities.ViewModels.dll"
       ],
-      "Path": "C:\\Users\\ADMIN\\.nuget\\packages\\uipath.system.activities\\24.10.7"
+      "Path": "C:\\Users\\ADMIN\\.nuget\\packages\\uipath.system.activities\\25.4.2"
     },
     {
       "Package": {
         "Id": "UiPath.System.Activities.Runtime",
-        "Version": "24.10.7"
+        "Version": "25.4.2"
       },
       "Assemblies": [
-        "C:\\Users\\ADMIN\\.nuget\\packages\\uipath.system.activities.runtime\\24.10.7\\lib\\net6.0-windows7.0\\UiPath.System.Activities.Package.Runtime.dll"
+        "C:\\Users\\ADMIN\\.nuget\\packages\\uipath.system.activities.runtime\\25.4.2\\lib\\net6.0-windows7.0\\UiPath.System.Activities.Package.Runtime.dll"
       ],
-      "Path": "C:\\Users\\ADMIN\\.nuget\\packages\\uipath.system.activities.runtime\\24.10.7"
+      "Path": "C:\\Users\\ADMIN\\.nuget\\packages\\uipath.system.activities.runtime\\25.4.2"
     },
     {
       "Package": {
         "Id": "UiPath.System.Activities.Runtime.Windows",
-        "Version": "24.10.7"
+        "Version": "25.4.2"
       },
       "Assemblies": [
-        "C:\\Users\\ADMIN\\.nuget\\packages\\uipath.system.activities.runtime.windows\\24.10.7\\lib\\net6.0-windows7.0\\UiPath.OrchestratorClient.dll",
-        "C:\\Users\\ADMIN\\.nuget\\packages\\uipath.system.activities.runtime.windows\\24.10.7\\lib\\net6.0-windows7.0\\UiPath.System.Activities.Api.dll",
-        "C:\\Users\\ADMIN\\.nuget\\packages\\uipath.system.activities.runtime.windows\\24.10.7\\lib\\net6.0-windows7.0\\UiPath.System.Activities.dll"
+        "C:\\Users\\ADMIN\\.nuget\\packages\\uipath.system.activities.runtime.windows\\25.4.2\\lib\\net6.0-windows7.0\\UiPath.OrchestratorClient.dll",
+        "C:\\Users\\ADMIN\\.nuget\\packages\\uipath.system.activities.runtime.windows\\25.4.2\\lib\\net6.0-windows7.0\\UiPath.System.Activities.Api.dll",
+        "C:\\Users\\ADMIN\\.nuget\\packages\\uipath.system.activities.runtime.windows\\25.4.2\\lib\\net6.0-windows7.0\\UiPath.System.Activities.dll"
       ],
-      "Path": "C:\\Users\\ADMIN\\.nuget\\packages\\uipath.system.activities.runtime.windows\\24.10.7"
+      "Path": "C:\\Users\\ADMIN\\.nuget\\packages\\uipath.system.activities.runtime.windows\\25.4.2"
     },
     {
       "Package": {

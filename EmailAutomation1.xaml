@@ -1,4 +1,4 @@
-<Activity mc:Ignorable="sap sap2010" x:Class="EmailAutomation1" VisualBasic.Settings="{x:Null}" sap2010:WorkflowViewState.IdRef="EmailAutomation1_1" xmlns="http://schemas.microsoft.com/netfx/2009/xaml/activities" xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006" xmlns:sap="http://schemas.microsoft.com/netfx/2009/xaml/activities/presentation" xmlns:sap2010="http://schemas.microsoft.com/netfx/2010/xaml/activities/presentation" xmlns:scg="clr-namespace:System.Collections.Generic;assembly=System.Private.CoreLib" xmlns:sco="clr-namespace:System.Collections.ObjectModel;assembly=System.Private.CoreLib" xmlns:snm="clr-namespace:System.Net.Mail;assembly=System.Net.Mail" xmlns:ui="http://schemas.uipath.com/workflow/activities" xmlns:umae="clr-namespace:UiPath.Mail.Activities.Enums;assembly=UiPath.Mail.Activities" xmlns:umame="clr-namespace:UiPath.MicrosoftOffice365.Activities.Mail.Enums;assembly=UiPath.Mail.Activities" xmlns:usau="clr-namespace:UiPath.Shared.Activities.Utils;assembly=UiPath.Mail.Activities" xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml">
+<Activity mc:Ignorable="sap sap2010" x:Class="EmailAutomation1" VisualBasic.Settings="{x:Null}" sap2010:WorkflowViewState.IdRef="EmailAutomation1_1" xmlns="http://schemas.microsoft.com/netfx/2009/xaml/activities" xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006" xmlns:sap="http://schemas.microsoft.com/netfx/2009/xaml/activities/presentation" xmlns:sap2010="http://schemas.microsoft.com/netfx/2010/xaml/activities/presentation" xmlns:sc="clr-namespace:System.ComponentModel;assembly=System.ComponentModel.TypeConverter" xmlns:scg="clr-namespace:System.Collections.Generic;assembly=System.Private.CoreLib" xmlns:sco="clr-namespace:System.Collections.ObjectModel;assembly=System.Private.CoreLib" xmlns:sd="clr-namespace:System.Data;assembly=System.Data.Common" xmlns:snm="clr-namespace:System.Net.Mail;assembly=System.Net.Mail" xmlns:ui="http://schemas.uipath.com/workflow/activities" xmlns:umae="clr-namespace:UiPath.Mail.Activities.Enums;assembly=UiPath.Mail.Activities" xmlns:umame="clr-namespace:UiPath.MicrosoftOffice365.Activities.Mail.Enums;assembly=UiPath.Mail.Activities" xmlns:usau="clr-namespace:UiPath.Shared.Activities.Utils;assembly=UiPath.Mail.Activities" xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml">
   <TextExpression.NamespacesForImplementation>
     <sco:Collection x:TypeArguments="x:String">
       <x:String>System.Activities</x:String>
@@ -53,6 +53,11 @@
       <x:String>UiPath.Mail.Activities.Business.ForEachMail</x:String>
       <x:String>UiPath.MicrosoftOffice365.Activities.Mail.Enums</x:String>
       <x:String>UiPath.Mail.SMTP.Activities</x:String>
+      <x:String>System.ComponentModel</x:String>
+      <x:String>System.Xml.Serialization</x:String>
+      <x:String>UiPath.Excel</x:String>
+      <x:String>UiPath.Excel.Activities</x:String>
+      <x:String>System.Activities.Runtime.Collections</x:String>
     </sco:Collection>
   </TextExpression.NamespacesForImplementation>
   <TextExpression.ReferencesForImplementation>
@@ -115,6 +120,13 @@
       <AssemblyReference>System.Collections.Immutable</AssemblyReference>
       <AssemblyReference>System.Linq.Queryable</AssemblyReference>
       <AssemblyReference>UiPath.Platform</AssemblyReference>
+      <AssemblyReference>System.ComponentModel.EventBasedAsync</AssemblyReference>
+      <AssemblyReference>PresentationFramework</AssemblyReference>
+      <AssemblyReference>WindowsBase</AssemblyReference>
+      <AssemblyReference>System.ComponentModel.Primitives</AssemblyReference>
+      <AssemblyReference>System.Private.Xml</AssemblyReference>
+      <AssemblyReference>UiPath.Excel</AssemblyReference>
+      <AssemblyReference>System.Data.SqlClient</AssemblyReference>
     </sco:Collection>
   </TextExpression.ReferencesForImplementation>
   <sap:WorkflowViewStateService.ViewState>
@@ -123,7 +135,7 @@
       <x:Boolean x:Key="ShouldExpandAll">True</x:Boolean>
     </scg:Dictionary>
   </sap:WorkflowViewStateService.ViewState>
-  <Sequence DisplayName="EmailAutomation1" sap:VirtualizedContainerService.HintSize="564,2033.3333333333333" sap2010:WorkflowViewState.IdRef="Sequence_1">
+  <Sequence DisplayName="EmailAutomation1" sap:VirtualizedContainerService.HintSize="666.6666666666666,2920" sap2010:WorkflowViewState.IdRef="Sequence_14">
     <Sequence.Variables>
       <Variable x:TypeArguments="scg:List(snm:MailMessage)" Name="emailList">
         <sap:WorkflowViewStateService.ViewState>
@@ -141,20 +153,24 @@
           </scg:Dictionary>
         </sap:WorkflowViewStateService.ViewState>
       </Variable>
+      <Variable x:TypeArguments="sd:DataTable" Name="OutputDataTable" />
+      <Variable x:TypeArguments="sd:DataTable" Name="Datatable" />
     </Sequence.Variables>
     <sap:WorkflowViewStateService.ViewState>
       <scg:Dictionary x:TypeArguments="x:String, x:Object">
         <x:Boolean x:Key="IsExpanded">True</x:Boolean>
       </scg:Dictionary>
     </sap:WorkflowViewStateService.ViewState>
-    <Sequence sap:VirtualizedContainerService.HintSize="560,2010.6666666666667" sap2010:WorkflowViewState.IdRef="Sequence_12">
+    <Sequence sap2010:Annotation.AnnotationText="Email Automation Started" DisplayName="Email Automation" sap:VirtualizedContainerService.HintSize="488,2897.3333333333335" sap2010:WorkflowViewState.IdRef="Sequence_12">
       <sap:WorkflowViewStateService.ViewState>
         <scg:Dictionary x:TypeArguments="x:String, x:Object">
           <x:Boolean x:Key="IsExpanded">True</x:Boolean>
+          <x:Boolean x:Key="IsPinned">False</x:Boolean>
+          <x:Boolean x:Key="IsAnnotationDocked">True</x:Boolean>
         </scg:Dictionary>
       </sap:WorkflowViewStateService.ViewState>
-      <ui:LogMessage DisplayName="Log Message" sap:VirtualizedContainerService.HintSize="526,176.66666666666666" sap2010:WorkflowViewState.IdRef="LogMessage_1" Level="Info" Message="[&quot;Starting Process&quot;]" />
-      <ui:GetIMAPMailMessages ClientName="{x:Null}" ClientVersion="{x:Null}" DeleteMessages="{x:Null}" MarkAsRead="{x:Null}" SecurePassword="{x:Null}" TimeoutMS="{x:Null}" ConnectionMode="LegacyConfiguration" DisplayName="Get IMAP Email List" Email="dillusanaa@gmail.com" EnableSSL="True" FilterExpression="From isfumtech@gmail.com" FilterExpressionCharacterSet="US-ASCII" sap:VirtualizedContainerService.HintSize="526,176.66666666666666" sap2010:WorkflowViewState.IdRef="GetIMAPMailMessages_13" IgnoreCRL="False" MailFolder="Inbox" Messages="[emailList]" OnlyUnreadMessages="True" OrderByDate="NewestFirst" Password="cnuy hotu uhiw axjt" Port="993" SecureConnection="Auto" Server="imap.gmail.com" Top="2" UseISConnection="False" UseOAuth="False">
+      <ui:LogMessage DisplayName="Log Message" sap:VirtualizedContainerService.HintSize="454,176.66666666666666" sap2010:WorkflowViewState.IdRef="LogMessage_1" Level="Info" Message="[&quot;Email Automation has started&quot;]" />
+      <ui:GetIMAPMailMessages ClientName="{x:Null}" ClientVersion="{x:Null}" DeleteMessages="{x:Null}" MarkAsRead="{x:Null}" SecurePassword="{x:Null}" TimeoutMS="{x:Null}" ConnectionMode="LegacyConfiguration" DisplayName="Get IMAP Email List" Email="dillusanaa@gmail.com" EnableSSL="True" FilterExpression="From isfumtech@gmail.com" FilterExpressionCharacterSet="US-ASCII" sap:VirtualizedContainerService.HintSize="454,176.66666666666666" sap2010:WorkflowViewState.IdRef="GetIMAPMailMessages_13" IgnoreCRL="False" MailFolder="Inbox" Messages="[emailList]" OnlyUnreadMessages="True" OrderByDate="NewestFirst" Password="cnuy hotu uhiw axjt" Port="993" SecureConnection="Auto" Server="imap.gmail.com" Top="1" UseISConnection="False" UseOAuth="False">
         <ui:GetIMAPMailMessages.ConnectionDetailsBackupSlot>
           <usau:BackupSlot x:TypeArguments="umae:ConnectionDetails" StoredValue="LegacyConfiguration">
             <usau:BackupSlot.BackupValues>
@@ -171,27 +187,160 @@
           </scg:Dictionary>
         </sap:WorkflowViewStateService.ViewState>
       </ui:GetIMAPMailMessages>
-      <ui:ForEach x:TypeArguments="snm:MailMessage" CurrentIndex="[index]" DisplayName="For Each currentMailMessage" sap:VirtualizedContainerService.HintSize="526,1574.6666666666667" sap2010:WorkflowViewState.IdRef="ForEach`1_1" Values="[emailList]">
+      <ui:ForEach x:TypeArguments="snm:MailMessage" CurrentIndex="[index]" DisplayName="For Each currentMailMessage" sap:VirtualizedContainerService.HintSize="454,2430.6666666666665" sap2010:WorkflowViewState.IdRef="ForEach`1_1" Values="[emailList]">
         <ui:ForEach.Body>
           <ActivityAction x:TypeArguments="snm:MailMessage">
             <ActivityAction.Argument>
               <DelegateInArgument x:TypeArguments="snm:MailMessage" Name="currentMailMessage" />
             </ActivityAction.Argument>
-            <Sequence DisplayName="Body" sap:VirtualizedContainerService.HintSize="524,1452" sap2010:WorkflowViewState.IdRef="Sequence_13">
+            <Sequence DisplayName="Body" sap:VirtualizedContainerService.HintSize="452,2308" sap2010:WorkflowViewState.IdRef="Sequence_13">
               <sap:WorkflowViewStateService.ViewState>
                 <scg:Dictionary x:TypeArguments="x:String, x:Object">
                   <x:Boolean x:Key="IsExpanded">True</x:Boolean>
                 </scg:Dictionary>
               </sap:WorkflowViewStateService.ViewState>
-              <If Condition="[currentMailMessage.Attachments.Count =0]" sap:VirtualizedContainerService.HintSize="490,1392" sap2010:WorkflowViewState.IdRef="If_1">
-                <If.Then>
-                  <Sequence DisplayName="Then" sap:VirtualizedContainerService.HintSize="488,339.3333333333333" sap2010:WorkflowViewState.IdRef="Sequence_14">
+              <ui:IfElseIfV2 Condition="[currentMailMessage.Attachments.Count = 0]" DisplayName="Else If" sap:VirtualizedContainerService.HintSize="418,2248" sap2010:WorkflowViewState.IdRef="IfElseIfV2_1">
+                <ui:IfElseIfV2.Else>
+                  <Sequence DisplayName="Else" sap:VirtualizedContainerService.HintSize="416,227.33333333333334" sap2010:WorkflowViewState.IdRef="Sequence_2">
                     <sap:WorkflowViewStateService.ViewState>
                       <scg:Dictionary x:TypeArguments="x:String, x:Object">
                         <x:Boolean x:Key="IsExpanded">True</x:Boolean>
+                        <x:Boolean x:Key="IsPinned">False</x:Boolean>
                       </scg:Dictionary>
                     </sap:WorkflowViewStateService.ViewState>
-                    <ui:SendMail Bcc="{x:Null}" Body="{x:Null}" Cc="{x:Null}" ContinueOnError="{x:Null}" From="{x:Null}" Name="{x:Null}" ReplyTo="{x:Null}" ResourceAttachmentList="{x:Null}" ResourceAttachments="{x:Null}" Result="{x:Null}" SecurePassword="{x:Null}" TimeoutMS="{x:Null}" UseOAuth="{x:Null}" AttachmentInputMode="Existing" ConnectionMode="LegacyConfiguration" DisplayName="Send SMTP Email" Email="dillusanaa@gmail.com" EnableSSL="True" sap:VirtualizedContainerService.HintSize="454,279.3333333333333" sap2010:WorkflowViewState.IdRef="SendMail_4" IgnoreCRL="False" IsBodyHtml="False" MailMessage="[currentMailMessage]" Password="cnuy hotu uhiw axjt" Port="587" SecureConnection="Auto" Server="smtp.gmail.com" Subject="No Attachment" To="isfumtech@gmail.com" UseISConnection="False">
+                    <ui:LogMessage DisplayName="Log Message" sap:VirtualizedContainerService.HintSize="382,167.33333333333334" sap2010:WorkflowViewState.IdRef="LogMessage_2" Level="Info" Message="[&quot; Email automation task completed successfully&quot;]" />
+                  </Sequence>
+                </ui:IfElseIfV2.Else>
+                <ui:IfElseIfV2.ElseIfs>
+                  <sc:BindingList x:TypeArguments="ui:IfElseIfBlock" AllowEdit="True" AllowNew="True" AllowRemove="True" RaiseListChangedEvents="True">
+                    <ui:IfElseIfBlock BlockType="ElseIf" Condition="[currentMailMessage.Attachments.Any(Function(attachment) attachment.Name.ToLower().EndsWith(&quot;.pdf&quot;))]" DisplayName="If else if block" sap2010:WorkflowViewState.IdRef="IfElseIfBlock_2">
+                      <ui:IfElseIfBlock.Then>
+                        <Sequence DisplayName="Body" sap:VirtualizedContainerService.HintSize="416,339.3333333333333" sap2010:WorkflowViewState.IdRef="Sequence_15">
+                          <sap:WorkflowViewStateService.ViewState>
+                            <scg:Dictionary x:TypeArguments="x:String, x:Object">
+                              <x:Boolean x:Key="IsExpanded">True</x:Boolean>
+                            </scg:Dictionary>
+                          </sap:WorkflowViewStateService.ViewState>
+                          <ui:SendMail Bcc="{x:Null}" Cc="{x:Null}" ContinueOnError="{x:Null}" From="{x:Null}" Name="{x:Null}" ReplyTo="{x:Null}" ResourceAttachmentList="{x:Null}" ResourceAttachments="{x:Null}" Result="{x:Null}" SecurePassword="{x:Null}" TimeoutMS="{x:Null}" UseOAuth="{x:Null}" AttachmentInputMode="Existing" Body="&quot;it was the PDF Attachment&quot;" ConnectionMode="LegacyConfiguration" DisplayName="Send SMTP Email" Email="dillusanaa@gmail.com" EnableSSL="True" sap:VirtualizedContainerService.HintSize="382,279.3333333333333" sap2010:WorkflowViewState.IdRef="SendMail_2" IgnoreCRL="False" IsBodyHtml="False" MailMessage="[currentMailMessage]" Password="cnuy hotu uhiw axjt" Port="587" SecureConnection="Auto" Server="smtp.gmail.com" Subject="PDF Attachment" To="isfumTech@gmail.com" UseISConnection="False">
+                            <ui:SendMail.AttachmentsBackup>
+                              <usau:BackupSlot x:TypeArguments="umame:AttachmentInputMode" StoredValue="Existing">
+                                <usau:BackupSlot.BackupValues>
+                                  <scg:Dictionary x:TypeArguments="umame:AttachmentInputMode, scg:List(x:Object)" />
+                                </usau:BackupSlot.BackupValues>
+                              </usau:BackupSlot>
+                            </ui:SendMail.AttachmentsBackup>
+                            <ui:SendMail.ConnectionDetailsBackupSlot>
+                              <usau:BackupSlot x:TypeArguments="umae:ConnectionDetails" StoredValue="LegacyConfiguration">
+                                <usau:BackupSlot.BackupValues>
+                                  <scg:List x:TypeArguments="x:Object" x:Key="IntegrationService" Capacity="1">
+                                    <x:Null />
+                                  </scg:List>
+                                </usau:BackupSlot.BackupValues>
+                              </usau:BackupSlot>
+                            </ui:SendMail.ConnectionDetailsBackupSlot>
+                            <ui:SendMail.Files>
+                              <scg:List x:TypeArguments="InArgument(x:String)" Capacity="0" />
+                            </ui:SendMail.Files>
+                          </ui:SendMail>
+                        </Sequence>
+                      </ui:IfElseIfBlock.Then>
+                    </ui:IfElseIfBlock>
+                    <ui:IfElseIfBlock BlockType="ElseIf" Condition="[currentMailMessage.Attachments.Any(Function(attachment) attachment.Name.EndsWith(&quot;.xlsx&quot;) Or attachment.Name.EndsWith(&quot;.xls&quot;))]" DisplayName="If else if block" sap2010:WorkflowViewState.IdRef="IfElseIfBlock_3">
+                      <ui:IfElseIfBlock.Then>
+                        <Sequence DisplayName="Body" sap:VirtualizedContainerService.HintSize="416,1086" sap2010:WorkflowViewState.IdRef="Sequence_16">
+                          <sap:WorkflowViewStateService.ViewState>
+                            <scg:Dictionary x:TypeArguments="x:String, x:Object">
+                              <x:Boolean x:Key="IsExpanded">True</x:Boolean>
+                            </scg:Dictionary>
+                          </sap:WorkflowViewStateService.ViewState>
+                          <ui:SaveMailAttachments Attachments="{x:Null}" ResourceAttachments="{x:Null}" DisplayName="Save Email Attachments" ExcludeInlineAttachments="False" FolderPath="Documents" sap:VirtualizedContainerService.HintSize="382,229.33333333333334" sap2010:WorkflowViewState.IdRef="SaveMailAttachments_1" Message="[currentMailMessage]" OverwriteExisting="False" />
+                          <ui:ReadRange WorkbookPathResource="{x:Null}" AddHeaders="True" DataTable="[Datatable]" DisplayName="Read Range Workbook" sap:VirtualizedContainerService.HintSize="382,120" sap2010:WorkflowViewState.IdRef="ReadRange_1" SheetName="Employee Details" WorkbookPath="Documents\RPAExcel.xlsx">
+                            <ui:ReadRange.Range>
+                              <InArgument x:TypeArguments="x:String">
+                                <Literal x:TypeArguments="x:String" Value="" />
+                              </InArgument>
+                            </ui:ReadRange.Range>
+                          </ui:ReadRange>
+                          <ui:FilterDataTable DataTable="[Datatable]" DisplayName="Filter Data Table" FilterRowsMode="Keep" sap:VirtualizedContainerService.HintSize="382,196" sap2010:WorkflowViewState.IdRef="FilterDataTable_1" OutputDataTable="[OutputDataTable]" SelectColumnsMode="Remove">
+                            <ui:FilterDataTable.Filters>
+                              <scg:List x:TypeArguments="ui:FilterOperationArgument" Capacity="4">
+                                <ui:FilterOperationArgument BooleanOperator="And" Operator="CONTAINS">
+                                  <ui:FilterOperationArgument.Column>
+                                    <InArgument x:TypeArguments="x:String">["Role in Company"]</InArgument>
+                                  </ui:FilterOperationArgument.Column>
+                                  <ui:FilterOperationArgument.Operand>
+                                    <InArgument x:TypeArguments="x:String">["Analyst"]</InArgument>
+                                  </ui:FilterOperationArgument.Operand>
+                                </ui:FilterOperationArgument>
+                                <ui:FilterOperationArgument BooleanOperator="Or" Operator="CONTAINS">
+                                  <ui:FilterOperationArgument.Column>
+                                    <InArgument x:TypeArguments="x:String">["Role in Company"]</InArgument>
+                                  </ui:FilterOperationArgument.Column>
+                                  <ui:FilterOperationArgument.Operand>
+                                    <InArgument x:TypeArguments="x:String">["IT Specialist"]</InArgument>
+                                  </ui:FilterOperationArgument.Operand>
+                                </ui:FilterOperationArgument>
+                                <ui:FilterOperationArgument BooleanOperator="Or" Operator="CONTAINS">
+                                  <ui:FilterOperationArgument.Column>
+                                    <InArgument x:TypeArguments="x:String">["Role in Company"]</InArgument>
+                                  </ui:FilterOperationArgument.Column>
+                                  <ui:FilterOperationArgument.Operand>
+                                    <InArgument x:TypeArguments="x:String">["Scientist"]</InArgument>
+                                  </ui:FilterOperationArgument.Operand>
+                                </ui:FilterOperationArgument>
+                              </scg:List>
+                            </ui:FilterDataTable.Filters>
+                            <ui:FilterDataTable.SelectColumns>
+                              <scg:List x:TypeArguments="InArgument" Capacity="4">
+                                <x:Null />
+                              </scg:List>
+                            </ui:FilterDataTable.SelectColumns>
+                          </ui:FilterDataTable>
+                          <ui:WriteRange StartingCell="{x:Null}" WorkbookPathResource="{x:Null}" AddHeaders="True" DataTable="[OutputDataTable]" DisplayName="Write Range Workbook" sap:VirtualizedContainerService.HintSize="382,148" sap2010:WorkflowViewState.IdRef="WriteRange_1" SheetName="sheet2" WorkbookPath="Documents\RPAExcel.xlsx" />
+                          <ui:SendMail Bcc="{x:Null}" Cc="{x:Null}" ContinueOnError="{x:Null}" From="{x:Null}" Name="{x:Null}" ReplyTo="{x:Null}" ResourceAttachmentList="{x:Null}" ResourceAttachments="{x:Null}" Result="{x:Null}" SecurePassword="{x:Null}" TimeoutMS="{x:Null}" UseOAuth="{x:Null}" AttachmentInputMode="FilePaths" ConnectionMode="LegacyConfiguration" DisplayName="Send SMTP Email" Email="dillusanaa@gmail.com" EnableSSL="True" sap:VirtualizedContainerService.HintSize="382,332.6666666666667" sap2010:WorkflowViewState.IdRef="SendMail_3" IgnoreCRL="False" IsBodyHtml="False" MailMessage="[currentMailMessage]" Password="cnuy hotu uhiw axjt" Port="587" SecureConnection="Auto" Server="smtp.gmail.com" Subject="Excel Attachment" To="dillusanaa@gmail.com" UseISConnection="False">
+                            <ui:SendMail.AttachmentsBackup>
+                              <usau:BackupSlot x:TypeArguments="umame:AttachmentInputMode" StoredValue="FilePaths">
+                                <usau:BackupSlot.BackupValues>
+                                  <scg:List x:TypeArguments="x:Object" x:Key="Existing" Capacity="1">
+                                    <x:Null />
+                                  </scg:List>
+                                </usau:BackupSlot.BackupValues>
+                              </usau:BackupSlot>
+                            </ui:SendMail.AttachmentsBackup>
+                            <ui:SendMail.Body>
+                              <InArgument x:TypeArguments="x:String">
+                                <Literal x:TypeArguments="x:String" Value="" />
+                              </InArgument>
+                            </ui:SendMail.Body>
+                            <ui:SendMail.ConnectionDetailsBackupSlot>
+                              <usau:BackupSlot x:TypeArguments="umae:ConnectionDetails" StoredValue="LegacyConfiguration">
+                                <usau:BackupSlot.BackupValues>
+                                  <scg:List x:TypeArguments="x:Object" x:Key="IntegrationService" Capacity="1">
+                                    <x:Null />
+                                  </scg:List>
+                                </usau:BackupSlot.BackupValues>
+                              </usau:BackupSlot>
+                            </ui:SendMail.ConnectionDetailsBackupSlot>
+                            <ui:SendMail.Files>
+                              <scg:List x:TypeArguments="InArgument(x:String)" Capacity="4">
+                                <InArgument x:TypeArguments="x:String">Documents\RPAExcel.xlsx</InArgument>
+                              </scg:List>
+                            </ui:SendMail.Files>
+                          </ui:SendMail>
+                        </Sequence>
+                      </ui:IfElseIfBlock.Then>
+                    </ui:IfElseIfBlock>
+                  </sc:BindingList>
+                </ui:IfElseIfV2.ElseIfs>
+                <ui:IfElseIfV2.Then>
+                  <Sequence DisplayName="Then" sap:VirtualizedContainerService.HintSize="416,339.3333333333333" sap2010:WorkflowViewState.IdRef="Sequence_1">
+                    <sap:WorkflowViewStateService.ViewState>
+                      <scg:Dictionary x:TypeArguments="x:String, x:Object">
+                        <x:Boolean x:Key="IsExpanded">True</x:Boolean>
+                        <x:Boolean x:Key="IsPinned">False</x:Boolean>
+                      </scg:Dictionary>
+                    </sap:WorkflowViewStateService.ViewState>
+                    <ui:SendMail Bcc="{x:Null}" Cc="{x:Null}" ContinueOnError="{x:Null}" From="{x:Null}" Name="{x:Null}" ReplyTo="{x:Null}" ResourceAttachmentList="{x:Null}" ResourceAttachments="{x:Null}" Result="{x:Null}" SecurePassword="{x:Null}" TimeoutMS="{x:Null}" UseOAuth="{x:Null}" AttachmentInputMode="Existing" Body="&quot;There's no attachment in the mail&quot;" ConnectionMode="LegacyConfiguration" DisplayName="Send SMTP Email" Email="dillusanaa@gmail.com" EnableSSL="True" sap:VirtualizedContainerService.HintSize="382,279.3333333333333" sap2010:WorkflowViewState.IdRef="SendMail_1" IgnoreCRL="False" IsBodyHtml="False" MailMessage="[currentMailMessage]" Password="cnuy hotu uhiw axjt" Port="587" SecureConnection="Auto" Server="smtp.gmail.com" Subject="No Attachment" To="isfumTech@gmail.com" UseISConnection="False">
                       <ui:SendMail.AttachmentsBackup>
                         <usau:BackupSlot x:TypeArguments="umame:AttachmentInputMode" StoredValue="Existing">
                           <usau:BackupSlot.BackupValues>
@@ -205,6 +354,15 @@
                             <scg:List x:TypeArguments="x:Object" x:Key="IntegrationService" Capacity="1">
                               <x:Null />
                             </scg:List>
+                            <scg:List x:TypeArguments="x:Object" x:Key="LegacyConfiguration" Capacity="7">
+                              <x:Null />
+                              <x:Null />
+                              <x:Null />
+                              <x:Null />
+                              <x:Null />
+                              <x:Null />
+                              <InArgument x:TypeArguments="x:Boolean">False</InArgument>
+                            </scg:List>
                           </usau:BackupSlot.BackupValues>
                         </usau:BackupSlot>
                       </ui:SendMail.ConnectionDetailsBackupSlot>
@@ -213,75 +371,8 @@
                       </ui:SendMail.Files>
                     </ui:SendMail>
                   </Sequence>
-                </If.Then>
-                <If.Else>
-                  <Sequence DisplayName="Else" sap:VirtualizedContainerService.HintSize="488,922" sap2010:WorkflowViewState.IdRef="Sequence_15">
-                    <sap:WorkflowViewStateService.ViewState>
-                      <scg:Dictionary x:TypeArguments="x:String, x:Object">
-                        <x:Boolean x:Key="IsExpanded">True</x:Boolean>
-                      </scg:Dictionary>
-                    </sap:WorkflowViewStateService.ViewState>
-                    <ui:MessageBox Caption="{x:Null}" ChosenButton="{x:Null}" AutoCloseAfter="00:00:00" DisplayName="Message Box" sap:VirtualizedContainerService.HintSize="454,118.66666666666667" sap2010:WorkflowViewState.IdRef="MessageBox_5" Text="[&quot;Attachment&quot;]" />
-                    <ui:ForEach x:TypeArguments="snm:MailMessage" CurrentIndex="{x:Null}" DisplayName="For Each currentMailMessage" sap:VirtualizedContainerService.HintSize="454,743.3333333333334" sap2010:WorkflowViewState.IdRef="ForEach`1_6" Values="[emailList]">
-                      <ui:ForEach.Body>
-                        <ActivityAction x:TypeArguments="snm:MailMessage">
-                          <ActivityAction.Argument>
-                            <DelegateInArgument x:TypeArguments="snm:MailMessage" Name="currentMailMessage" />
-                          </ActivityAction.Argument>
-                          <Sequence DisplayName="Body" sap:VirtualizedContainerService.HintSize="452,620.6666666666666" sap2010:WorkflowViewState.IdRef="Sequence_16">
-                            <sap:WorkflowViewStateService.ViewState>
-                              <scg:Dictionary x:TypeArguments="x:String, x:Object">
-                                <x:Boolean x:Key="IsExpanded">True</x:Boolean>
-                              </scg:Dictionary>
-                            </sap:WorkflowViewStateService.ViewState>
-                            <If Condition="[currentMailMessage.Attachments.Any(Function(attachment) attachment.Name.ToLower().EndsWith(&quot;.pdf&quot;))]" sap:VirtualizedContainerService.HintSize="418,560.6666666666666" sap2010:WorkflowViewState.IdRef="If_3">
-                              <If.Then>
-                                <Sequence DisplayName="Then" sap:VirtualizedContainerService.HintSize="416,339.3333333333333" sap2010:WorkflowViewState.IdRef="Sequence_17">
-                                  <sap:WorkflowViewStateService.ViewState>
-                                    <scg:Dictionary x:TypeArguments="x:String, x:Object">
-                                      <x:Boolean x:Key="IsExpanded">True</x:Boolean>
-                                    </scg:Dictionary>
-                                  </sap:WorkflowViewStateService.ViewState>
-                                  <ui:SendMail Bcc="{x:Null}" Body="{x:Null}" Cc="{x:Null}" ContinueOnError="{x:Null}" From="{x:Null}" Name="{x:Null}" ResourceAttachmentList="{x:Null}" ResourceAttachments="{x:Null}" Result="{x:Null}" SecurePassword="{x:Null}" TimeoutMS="{x:Null}" UseOAuth="{x:Null}" AttachmentInputMode="Existing" ConnectionMode="LegacyConfiguration" DisplayName="Send SMTP Email" Email="dillusanaa@gmail.com" EnableSSL="True" sap:VirtualizedContainerService.HintSize="382,279.3333333333333" sap2010:WorkflowViewState.IdRef="SendMail_6" IgnoreCRL="False" IsBodyHtml="False" MailMessage="[currentMailMessage]" Password="cnuy hotu uhiw axjt" Port="587" ReplyTo="isfumtech@gmail.com" SecureConnection="Auto" Server="smtp.gmail.com" Subject="has pdf Attachment" To="isfum@gmail.com" UseISConnection="False">
-                                    <ui:SendMail.AttachmentsBackup>
-                                      <usau:BackupSlot x:TypeArguments="umame:AttachmentInputMode" StoredValue="Existing">
-                                        <usau:BackupSlot.BackupValues>
-                                          <scg:Dictionary x:TypeArguments="umame:AttachmentInputMode, scg:List(x:Object)" />
-                                        </usau:BackupSlot.BackupValues>
-                                      </usau:BackupSlot>
-                                    </ui:SendMail.AttachmentsBackup>
-                                    <ui:SendMail.ConnectionDetailsBackupSlot>
-                                      <usau:BackupSlot x:TypeArguments="umae:ConnectionDetails" StoredValue="LegacyConfiguration">
-                                        <usau:BackupSlot.BackupValues>
-                                          <scg:List x:TypeArguments="x:Object" x:Key="IntegrationService" Capacity="1">
-                                            <x:Null />
-                                          </scg:List>
-                                        </usau:BackupSlot.BackupValues>
-                                      </usau:BackupSlot>
-                                    </ui:SendMail.ConnectionDetailsBackupSlot>
-                                    <ui:SendMail.Files>
-                                      <scg:List x:TypeArguments="InArgument(x:String)" Capacity="0" />
-                                    </ui:SendMail.Files>
-                                  </ui:SendMail>
-                                </Sequence>
-                              </If.Then>
-                              <If.Else>
-                                <Sequence DisplayName="Else" sap:VirtualizedContainerService.HintSize="416,90.66666666666667" sap2010:WorkflowViewState.IdRef="Sequence_18">
-                                  <sap:WorkflowViewStateService.ViewState>
-                                    <scg:Dictionary x:TypeArguments="x:String, x:Object">
-                                      <x:Boolean x:Key="IsExpanded">True</x:Boolean>
-                                    </scg:Dictionary>
-                                  </sap:WorkflowViewStateService.ViewState>
-                                </Sequence>
-                              </If.Else>
-                            </If>
-                          </Sequence>
-                        </ActivityAction>
-                      </ui:ForEach.Body>
-                    </ui:ForEach>
-                  </Sequence>
-                </If.Else>
-              </If>
+                </ui:IfElseIfV2.Then>
+              </ui:IfElseIfV2>
             </Sequence>
           </ActivityAction>
         </ui:ForEach.Body>

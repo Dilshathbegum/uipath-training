@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="utf-16"?>
+<ObjectRepositoryTargetData ContentHash="tIx8Kp82uEOBSDnq-BO_og" xmlns="http://schemas.uipath.com/workflow/activities/uix" xmlns:scg="clr-namespace:System.Collections.Generic;assembly=System.Private.CoreLib" xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml">
+  <ObjectRepositoryTargetData.Data>
+    <TargetAnchorable x:Key="TargetAnchorable" BrowserURL="rpachallenge.com/movieSearch" CVScreenId="8e911d68-ecdf-4674-be9b-ce754ec86101" DesignTimeRectangle="11, 219, 0, 0" ElementType="Text" FullSelectorArgument="&lt;webctrl aaname='*' innertext='*' visibleinnertext='*' /&gt;&lt;webctrl aaname='*' innertext='*' visibleinnertext='*' /&gt;" Guid="76ce8ded-7f25-4cd5-a9a0-7a392475ebd4" ScopeSelectorArgument="&lt;html app='chrome.exe' title='Rpa Challenge' /&gt;" SearchSteps="Selector" Version="V6" Visibility="Interactive" WaitForReadyArgument="None">
+      <TargetAnchorable.Anchors>
+        <scg:List x:TypeArguments="ITarget" Capacity="4">
+          <Target CVScreenId="8e911d68-ecdf-4674-be9b-ce754ec86101" CvTextArea="1395, 830, 141, 22" CvTextArgument="Snow White" CvType="Text" DesignTimeRectangle="1397, 826, 299, 32" ElementType="Text" FuzzySelectorArgument="&lt;webctrl aaname='Snow White ' tag='SPAN' type='' class='card-title activator' matching:aaname='fuzzy' fuzzylevel:aaname='0.0' matching:class='fuzzy' fuzzylevel:class='0.0' check:innerText='Snow White' /&gt;" Guid="c97b3bd8-2964-4a06-bef2-fc205b126ba6" SearchSteps="FuzzySelector, CV" />
+        </scg:List>
+      </TargetAnchorable.Anchors>
+      <imageRef attrName="InformativeScreenshot" originalValue="3dae3f7812962e9a372d15077aaeb75d.png" xmlns="">0OSsbHwT2AEu0LChEABiSlg</imageRef>
+    </TargetAnchorable>
+    <x:String x:Key="ActivityType">Click</x:String>
+  </ObjectRepositoryTargetData.Data>
+</ObjectRepositoryTargetData>
