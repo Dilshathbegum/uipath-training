@@ -1,0 +1,14 @@
+﻿{
+  "Name": "Company Name",
+  "Type": "Element",
+  "TaxonomyType": "Label",
+  "Id": "z-jN0j1YS0ysOlj8-Dg_tw",
+  "Reference": "FKN7ci7VEUurLgMGckbnAA/z-jN0j1YS0ysOlj8-Dg_tw",
+  "ParentRef": "FKN7ci7VEUurLgMGckbnAA/71NAdmwRGUya4MXkcfptZg",
+  "Created": "2025-05-12T15:22:42.0107689Z",
+  "Updated": "2025-05-12T15:22:42.0107689Z",
+  "CreatedBy": [
+    "UiPath.UIAutomationCore, Version=25.10.2.0, Culture=neutral, PublicKeyToken=null",
+    "UiPath.Platform, Version=25.4.0.0, Culture=neutral, PublicKeyToken=null"
+  ]
+}

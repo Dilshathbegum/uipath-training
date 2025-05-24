@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="utf-16"?>
+<ObjectRepositoryTargetData ContentHash="JBf7_xs2SkCelrFwfR28wA" xmlns="http://schemas.uipath.com/workflow/activities/uix" xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml">
+  <ObjectRepositoryTargetData.Data>
+    <TargetAnchorable x:Key="TargetAnchorable" BrowserURL="rpachallenge.com/movieSearch" DesignTimeRectangle="994, 356, 321, 112" ElementType="Text" FullSelectorArgument="&lt;webctrl tag='P' aaname='*When Dr. Joseph Cawl and members of his Hidden Wisdom cult die in a mysterious fire, survivors contact a paranormal expert to find the truth. What they discover makes them the next target of a deranged killer.' innertext='When Dr. Joseph Cawl and members of his Hidden Wisdom cult die in a mysterious fire, survivors contact a paranormal expert to find the truth. What they discover makes them the next target of a deranged killer.' visibleinnertext='When Dr. Joseph Cawl and members of his Hidden Wisdom cult die in a mysterious fire, survivors contact a paranormal expert to find the truth. What they discover makes them the next target of a deranged killer.' /&gt;" Guid="cee67b03-dded-490f-8d68-552699165ba2" ImageBase64="" ScopeSelectorArgument="&lt;html app='chrome.exe' title='Rpa Challenge' /&gt;" SearchSteps="Selector" Version="V6" Visibility="Interactive" WaitForReadyArgument="None">
+      <imageRef attrName="InformativeScreenshot" originalValue="664bb1c1f45b6ee4f27a3fd66e2ff3a7.png" xmlns="">0ZEB8XSh3Kka6TU2VaZOaDA</imageRef>
+    </TargetAnchorable>
+    <x:String x:Key="ActivityType">GetText</x:String>
+  </ObjectRepositoryTargetData.Data>
+</ObjectRepositoryTargetData>

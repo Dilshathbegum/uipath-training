@@ -1,0 +1,14 @@
+﻿{
+  "Name": "Rpa Challenge RPA Chall…(1)",
+  "Type": "Element",
+  "TaxonomyType": "Label",
+  "Id": "p1Ladlkc5E6e6SgSbcNkDg",
+  "Reference": "FKN7ci7VEUurLgMGckbnAA/p1Ladlkc5E6e6SgSbcNkDg",
+  "ParentRef": "FKN7ci7VEUurLgMGckbnAA/MK-dinFWI0ODmv_O23Yz_w",
+  "Created": "2025-05-20T16:49:42.4570462Z",
+  "Updated": "2025-05-20T16:49:42.4570462Z",
+  "CreatedBy": [
+    "UiPath.UIAutomationCore, Version=25.10.2.0, Culture=neutral, PublicKeyToken=null",
+    "UiPath.Platform, Version=25.4.0.0, Culture=neutral, PublicKeyToken=null"
+  ]
+}

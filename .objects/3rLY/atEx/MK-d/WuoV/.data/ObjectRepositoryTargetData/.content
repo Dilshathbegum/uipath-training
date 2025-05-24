@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="utf-16"?>
+<ObjectRepositoryTargetData ContentHash="g2MvkiZbaU6PStWvOKyc3Q" xmlns="http://schemas.uipath.com/workflow/activities/uix" xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml">
+  <ObjectRepositoryTargetData.Data>
+    <TargetAnchorable x:Key="TargetAnchorable" BrowserURL="rpachallenge.com/movieSearch" CVScreenId="16fcd9f1-eeca-4e88-b815-061c33e42487" CvElementArea="1233, 220, 197, 96" CvTextArea="1254, 255, 154, 22" CvTextArgument="Movie Search" CvType="Button" DesignTimeRectangle="1234, 219, 196, 96" ElementType="Text" FullSelectorArgument="&lt;webctrl aaname='Movie Search' parentid='nav-mobile' tag='A' /&gt;" Guid="a5883a22-4b70-4185-a3f8-1c65fe982e67" ScopeSelectorArgument="&lt;html app='chrome.exe' title='Rpa Challenge' /&gt;" SearchSteps="Selector, CV" Version="V6" Visibility="Interactive" WaitForReadyArgument="None">
+      <imageRef attrName="InformativeScreenshot" originalValue="1704f56dcf3ba14556e989937df48850.png" xmlns="">0Jfb3mYnnuEiAyIRtTIX1iQ</imageRef>
+    </TargetAnchorable>
+    <x:String x:Key="ActivityType">Click</x:String>
+  </ObjectRepositoryTargetData.Data>
+</ObjectRepositoryTargetData>

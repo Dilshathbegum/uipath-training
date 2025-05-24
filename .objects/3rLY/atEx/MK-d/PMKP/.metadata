@@ -1,0 +1,13 @@
+﻿{
+  "Name": "Sinners closeTrying to …",
+  "Type": "Element",
+  "Id": "PMKPeG0GMEaw0O1J-yTs7A",
+  "Reference": "FKN7ci7VEUurLgMGckbnAA/PMKPeG0GMEaw0O1J-yTs7A",
+  "ParentRef": "FKN7ci7VEUurLgMGckbnAA/MK-dinFWI0ODmv_O23Yz_w",
+  "Created": "2025-05-19T16:05:11.8921206Z",
+  "Updated": "2025-05-19T16:05:11.8921206Z",
+  "CreatedBy": [
+    "UiPath.UIAutomationCore, Version=25.10.2.0, Culture=neutral, PublicKeyToken=null",
+    "UiPath.Platform, Version=25.4.0.0, Culture=neutral, PublicKeyToken=null"
+  ]
+}

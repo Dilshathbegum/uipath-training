@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="utf-16"?>
+<ObjectRepositoryTargetData ContentHash="Lz0ivnPnWE-J-KqhCC10_g" xmlns="http://schemas.uipath.com/workflow/activities/uix" xmlns:scg="clr-namespace:System.Collections.Generic;assembly=System.Private.CoreLib" xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml">
+  <ObjectRepositoryTargetData.Data>
+    <TargetAnchorable x:Key="TargetAnchorable" BrowserURL="rpachallenge.com/movieSearch" CVScreenId="c8fc2e86-33d7-4a32-81f4-27c8bfce566a" DesignTimeRectangle="11, 219, 0, 0" ElementType="Text" FullSelectorArgument="&lt;webctrl aaname='*' innertext='*' visibleinnertext='*' /&gt;&lt;webctrl aaname='*' innertext='*' visibleinnertext='*' /&gt;" Guid="2b32ea51-9b49-4ec3-a708-56d102649647" ScopeSelectorArgument="&lt;html app='chrome.exe' title='Rpa Challenge' /&gt;" SearchSteps="Selector" Version="V6" Visibility="Interactive" WaitForReadyArgument="None">
+      <TargetAnchorable.Anchors>
+        <scg:List x:TypeArguments="ITarget" Capacity="4">
+          <Target CVScreenId="26b3bc02-9360-4031-949d-92819f51c3b0" CvTextArea="611, 830, 232, 28" CvTextArgument="Mission: Impossible" CvType="Text" DesignTimeRectangle="613, 826, 299, 32" ElementType="Text" FuzzySelectorArgument="&lt;webctrl aaname='Mission: Impossible  ' tag='SPAN' type='' class='card-title activator' matching:aaname='fuzzy' fuzzylevel:aaname='0.0' matching:class='fuzzy' fuzzylevel:class='0.0' check:innerText='Mission: Impossible' /&gt;" Guid="bb714c54-0f1e-4ac5-97f8-2da5f6821773" SearchSteps="FuzzySelector, CV" />
+        </scg:List>
+      </TargetAnchorable.Anchors>
+      <imageRef attrName="InformativeScreenshot" originalValue="344bc96a9b2f96423064f6887ae06d88.png" xmlns="">0v9VLOlzrzEa0gYP7kSRmWA</imageRef>
+    </TargetAnchorable>
+    <x:String x:Key="ActivityType">Click</x:String>
+  </ObjectRepositoryTargetData.Data>
+</ObjectRepositoryTargetData>

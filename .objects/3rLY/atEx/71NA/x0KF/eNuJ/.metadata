@@ -1,0 +1,13 @@
+﻿{
+  "Name": "Last Name",
+  "Type": "Element",
+  "TaxonomyType": "Label",
+  "Id": "eNuJuntFxUWLsQgxFrTdqA",
+  "Reference": "FKN7ci7VEUurLgMGckbnAA/eNuJuntFxUWLsQgxFrTdqA",
+  "ParentRef": "FKN7ci7VEUurLgMGckbnAA/x0KFMD2n1Em8dAGcgdqCjg",
+  "Created": "2025-05-12T16:11:30.2888707Z",
+  "Updated": "2025-05-12T16:11:30.2888707Z",
+  "CreatedBy": [
+    "UiPath.Platform, Version=25.4.0.0, Culture=neutral, PublicKeyToken=null"
+  ]
+}

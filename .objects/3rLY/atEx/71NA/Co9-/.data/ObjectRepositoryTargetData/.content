@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="utf-16"?>
+<ObjectRepositoryTargetData ContentHash="HxLAYXF0v0iSLbrcgm-rmg" xmlns="http://schemas.uipath.com/workflow/activities/uix" xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml">
+  <ObjectRepositoryTargetData.Data>
+    <TargetAnchorable x:Key="TargetAnchorable" BrowserURL="rpachallenge.com" CVScreenId="5c330841-135a-4ac1-ae2c-7b7de6712e58" CvElementArea="1881, 25, 30, 30" CvType="CloseButton" DesignTimeRectangle="1862, 11, 69, 60" ElementType="Button" FullSelectorArgument="&lt;ctrl name='Rpa Challenge - Google Chrome' role='pane' /&gt;&lt;ctrl name='Close' role='push button' /&gt;" Guid="fdd9ab09-32fe-40bc-a6bf-6943c226e9fe" ScopeSelectorArgument="&lt;wnd app='chrome.exe' cls='Chrome_WidgetWin_1' title='Rpa Challenge - Google Chrome' /&gt;" SearchSteps="Selector, CV" Version="V6" Visibility="Interactive" WaitForReadyArgument="None">
+      <imageRef attrName="InformativeScreenshot" originalValue="1a52f1065f9a52cb2f5b6448c85513ae.png" xmlns="">06sXUGCZvtEy3bZDVORL-2A</imageRef>
+    </TargetAnchorable>
+    <x:String x:Key="ActivityType">Click</x:String>
+  </ObjectRepositoryTargetData.Data>
+</ObjectRepositoryTargetData>
